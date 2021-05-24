@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+}
+span.name-stats{
+    font-weight: bold;
+}
+span.understats{
+    color:hsl(0, 0%, 59%);
+    font-size: 12px;
+}
+span.age{
+    color:hsl(0, 0%, 59%);
+    margin-left: 10px;
+}
+span.city{
+    color:hsl(0, 0%, 59%);
+    font-size: 12px;
+}
+
+.line{
+    grid-area: 2 / 1 / 3 / 4;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+}
+#pattern-bottom{
+    display: flex;
+    position: absolute;
+    right:0%;
+    bottom: 0%;
+    transform: translate(25%, 65%);
+    z-index: 0;
+}
+#pattern-top{
+    display: flex;
+    position: absolute;
+    top:0%;
+    left: 0%;
+    transform: translate(-31%, -45%)
+}
+.card{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 140px 145px 90px;
+    background-color: hsl(0, 0%, 99%);
+    border-radius: 15px;
+    z-index: 10;
+    box-shadow:0 0 6em hsl(0, 0%, 20%);
+    max-width: 350px;
+    min-width: 325px;
+    margin: auto;
+}
+.pattern-card{
+    grid-area: 1 / 1 / 1 / 4;
+    z-index: 2;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+.avatar{
+    grid-area: 1 / 2 / 2 / 2;
+    width: 96px;
+    border-radius: 50%;
+    z-index: 3;
+    border: 4px solid white;
+    transform: translate(10px, 92px);
+}
+.text{
+    grid-area: 2/ 1 / 2 / 4;
+    margin-top: 75px;
+    text-align: center;
+    line-height: 15pt;
+}
+ul li{
+    list-style: none;
+    grid-area: 3/ 1 / 3 /3;
+}
+.followers{
+    grid-area: 3 /1 /3 /1;
+    text-align: center;
+    margin-top: 30px;
+}
+.likes{
+    grid-area: 3 /2 /3 /2;
+    text-align: center;
+    margin-top: 30px;
+}
+.photos{
+    grid-area: 3 /3 /3 /3;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+  /* Smallest device */
+@media (min-width: 100px) and (max-width: 575px) {
+  .card {
+    height: 375px;
+    width: 328px;
+    /*margin-left: 25px;
+    margin-top: 154px;*/
+  }
+  .body{
+    margin:auto;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card {
+    height: 375px;
+    width: 350px;
+  }
+  .body{
+    margin:auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card {
+    height: 375px;
+    width: 350px;
+  }
+  .body{
+      margin:auto;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    height: 375px;
+    width: 350px;
+  }
+  .body{
+    margin:auto;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .card {
+      max-height: 375px;
+      max-width: 350px;
+    }
+    .body{
+        margin: auto;
+    }
+}
