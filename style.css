@@ -61,13 +61,14 @@ span.city{
     max-width: 350px;
     min-width: 325px;
     margin: auto;
+    overflow: hidden;
 }
 .pattern-card{
     grid-area: 1 / 1 / 1 / 4;
     z-index: 2;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    width: 100%;
+    width: 101%;
 }
 .avatar{
     grid-area: 1 / 2 / 2 / 2;
